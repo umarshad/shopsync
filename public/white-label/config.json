@@ -1,0 +1,17 @@
+{
+  "appName": "ShopSync POS",
+  "logo": "/logo.png",
+  "primaryColor": "#16a34a",
+  "secondaryColor": "#22c55e",
+  "currency": "PKR",
+  "currencySymbol": "₨",
+  "language": "en",
+  "printerWidth": 58,
+  "shopName": "My Shop",
+  "shopAddress": "",
+  "shopPhone": "",
+  "shopEmail": "",
+  "taxRate": 0,
+  "receiptFooter": "Thank you for your purchase!"
+}
+

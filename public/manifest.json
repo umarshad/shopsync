@@ -1,0 +1,20 @@
+{
+  "name": "ShopSync POS",
+  "short_name": "ShopSync",
+  "description": "Offline-first Retail POS + Inventory Management System",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#16a34a",
+  "orientation": "portrait",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
+
