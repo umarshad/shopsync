@@ -38,19 +38,17 @@ export default function ProductList() {
   }, [profile]);
 
   const loadProducts = async () => {
-    if (!profile) return;
-    
     setLoading(true);
     try {
-      // Load from cache first
+      // Load from cache first (works even without profile)
       const cachedProducts = await storage.getProducts();
       if (cachedProducts && cachedProducts.length > 0) {
         setProducts(cachedProducts);
         extractCategories(cachedProducts);
       }
 
-      // Load from server if online
-      if (navigator.onLine) {
+      // Load from server if online and profile is available
+      if (navigator.onLine && profile) {
         const { data, error } = await supabase
           .from('products')
           .select('*')
